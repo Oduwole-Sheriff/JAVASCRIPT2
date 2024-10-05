@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drop-down Profile Menu</title>
+    <link rel="stylesheet" href="Dropdown.css">
+</head>
+
+<body>
+
+    <div class="hero">
+        <nav>
+            <img src="images/logo.png" class="logo">
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contacy</a></li>
+            </ul>
+
+            <img src="images/profile.jpg" class="user-pic" onclick="toggleMenu()">
+
+
+            <div class="sub-menu-wrap" id="submenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="images/profile.jpg">
+                        <h3>Tony Elumelu</h3>
+                    </div>
+                    <hr>
+
+                    <a href="#" class="sub-menu-link"> 
+                        <img src="images/user.png">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="sub-menu-link"> 
+                        <img src="images/settings.png">
+                        <p>Settings & Privacy</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="sub-menu-link"> 
+                        <img src="images/help.jpg">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="sub-menu-link"> 
+                        <img src="images/logout.png">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+
+                </div>
+            </div>
+
+
+
+        </nav>
+    </div>
+
+
+
+
+<script>
+
+    let subMenu = document.getElementById("submenu");
+
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+
+</script>
+
+
+
+    
+</body>
+
+</html>

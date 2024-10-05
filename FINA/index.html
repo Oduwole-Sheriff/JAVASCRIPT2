@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>FINA</title>
+</head>
+<body>
+
+    <div class="full-background">
+        <div class="side-nav">
+            <h3>FINA</h3>
+            <div class="close-btn">
+                <span class="close"></span>
+                <span class="close"></span>
+            </div>
+            <ul>
+                <li class="active"><i class="fa-solid fa-table-columns"></i> <a href="#">Dashboard</a></li>
+                <li><i class="fa-solid fa-file-code"></i> <a href="#">Transaction</a></li>
+                <li><i class="fa-sharp fa-solid fa-chart-line"></i> <a href="#">Exchange</a></li>
+                <li><i class="fa-solid fa-file"></i> <a href="#">Report</a></li>
+                <li><i class="fa-regular fa-comment"></i> <a href="#">Conversation</a></li>
+                <li><i class="fa-solid fa-people-group"></i> <a href="#">Team</a></li>
+                <li><i class="fa-regular fa-calendar"></i> <a href="#">Calendar</a></li>
+            </ul>
+        </div>
+
+        <div class="main-background">
+            <nav class="top-nav">
+                <div class="top-nav-display">
+                    <!-- hamburger-menu -->
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="search-box">
+                        <i class="fa-solid Search-icon fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search here...">
+                    </div>
+                    <div class="notification-icon">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+                    <div class="profile-pic-1">
+                        <img src="assets/profile-pic 1.webp" alt="profile-pic">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="main-body">
+                <div class="main-body-bg">
+                    <div class="main-body-nav">
+                        <div class="main-nav">
+                            <p class="profile-text"><a href="#">Profile</a> <span></span></p>
+                            <p><a href="#">Security</a></p>
+                            <p><a href="#">Payment</a></p>
+                            <p><a href="#">Notification</a></p>
+                        </div>
+                        <div class="update">
+                            <p>Cancle</p>
+                            <p class="update-text">Update Settings</p>
+                        </div>
+                    </div>
+                    <div class="main-body-inner">
+                        <div class="main-body-image">
+                            <div>
+                                <i class="fa-solid fa-camera"></i>
+                                <img src="assets/profile-pic 2.webp" alt="pic">
+                            </div>
+                            <div>
+                                <h3>Shegzzy Lee</h3>
+                                <small>oduwolesheriff@gmail.com</small>   
+                            </div>
+                        </div>
+                        <div class="main-body-form">
+                            <div class="input-flex">
+                                <div class="input-flex-1">
+                                    <p>First name:</p>
+                                    <input class="search" type="text" placeholder="Your name...">
+                                </div>
+                                <div class="input-flex-1">
+                                    <p>Last name:</p>
+                                    <input class="search" type="text" placeholder="Your last name...">
+                                </div>
+                            </div>
+                            <div class="input-flex">
+                                <div class="input-flex-1">
+                                    <p>Email:</p>
+                                    <input class="search" type="text" placeholder="example@gmail.com">
+                                </div>
+                                <div class="input-flex-1">
+                                    <p>Phone:</p>
+                                    <input class="search" type="text" placeholder="+234">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="input-flex-password">
+                                    <p>Password:</p>
+                                    <input class="search-password" type="text" placeholder="00000">
+                                </div>
+                                <label for="country">Language</label><br>
+                                <select id="country" name="country">
+                                    <option value="English">English</option>
+                                    <option value="French">French</option>
+                                    <option value="Spanish">Spanish</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

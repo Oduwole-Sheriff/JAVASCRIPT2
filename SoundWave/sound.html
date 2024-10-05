@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music Website</title>
+    <link rel="stylesheet" href="sound.css">
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+</head>
+
+<body>
+    
+    <div class="hero">
+        <div class="music">
+            <p>Artist: Zinoleesky</p>
+            <h1>Many Things</h1>
+            <div class="track">
+                <img src="media/play.gif" id="playBtn">
+                <div id="waveform"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script>
+
+    var playBtn = document.getElementById("playBtn");
+
+    var wavesurfer = WaveSurfer.create({
+        container: '#waveform',
+        waveColor: '#ddd',
+        progressColor: '#ff006c',
+        barWidth: 4,
+        responsive: true,
+        height: 90,
+        barRadius: 4
+    });
+
+    wavesurfer.load('media/Zinoleesky-Many-Things-(TrendyBeatz.com).mp3')
+
+    playBtn.onclick = function(){
+        wavesurfer.playPause();
+        if(playBtn.src.includes("play.gif")){
+            playBtn.src = "media/pause.png";
+        }else{
+            playBtn.src = "media/play.gif";
+        }
+    }
+
+    wavesurfer.on('finish', function(){
+        playBtn.src = "media/play.gif";
+        wavesurfer.stop();
+    })
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Testimonial Website</title>
+    <!---<link rel="stylesheet" href="style/swiper-bundle.min.css">-->
+    <link rel="stylesheet" href="style/test.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <section class="container">
+        <div class="swiper testimonial">
+            <div class="swiper-wrapper testi-content">
+                <div class="slide swiper-slide">
+                    <img src="images/photo 1.jpg" class="image">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptates sapiente officia corporis voluptate in animi suscipit placeat amet. Nam eveniet necessitatibus omnis asperiores quasi, quo incidunt repudiandae architecto placeat.</p>
+
+                    <i class='bx bxs-quote-alt-left quot-icon'></i>
+
+                    <div class="details">
+                        <span class="name">Kenny Dray</span>
+                        <span class="job">Web Developer</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="images/photo 3.webp" class="image">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptates sapiente officia corporis voluptate in animi suscipit placeat amet. Nam eveniet necessitatibus omnis asperiores quasi, quo incidunt repudiandae architecto placeat.</p>
+
+                    <i class='bx bxs-quote-alt-left quot-icon'></i>
+
+                    <div class="details">
+                        <span class="name">Ozan Clay</span>
+                        <span class="job">Web Developer</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="images/photo 2.jpg" class="image">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptates sapiente officia corporis voluptate in animi suscipit placeat amet. Nam eveniet necessitatibus omnis asperiores quasi, quo incidunt repudiandae architecto placeat.</p>
+
+                    <i class='bx bxs-quote-alt-left quot-icon'></i>
+
+                    <div class="details">
+                        <span class="name">Richard MILI</span>
+                        <span class="job">Web Developer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev nav-btn"></div>
+            <div class="swiper-button-next nav-btn"></div>
+
+        </div>
+        
+    </section>
+    
+    
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        slidesPerview: 1,
+        grabCursor: true,
+        loop: true,
+
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        },
+
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+});
+
+</script>
+
+</body>
+</html>
